@@ -6,12 +6,13 @@ var pi = emoji.get("pizza");
 const assertEqual = function(actual, expected) {
     
     if(actual === expected){
-        console.log(pi+"Assertion Passed: "+ actual + " === " + expected);
+        console.log(`${pi} Assertion Passed:  ${actual}  " === "  ${expected}`);
     }
     else{
-        console.log(pi+"Assertion Failed:", actual+ ' !== '+ expected);
+        console.log(`${pi} Assertion Failed: ${actual}  !==  ${expected}`);
     }
 };
+
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp");
