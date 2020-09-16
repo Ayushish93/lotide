@@ -12,14 +12,11 @@ const countLetters = function(str)
 {
     let newstr = str.split(" ").join('');
     let returnobj = {};
-    for(let i of newstr)
-    {
-        if(returnobj.hasOwnProperty(i)) 
-        {
+    for(let i of newstr) {
+        if(returnobj.hasOwnProperty(i)) {
             returnobj[i] += 1;
         }
-        else
-        {
+        else {
             returnobj[i] = 1;
         }
     }
