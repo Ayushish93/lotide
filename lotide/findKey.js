@@ -7,7 +7,15 @@ const assertEqual = function(actual, expected) {
         console.log(`❌Assertion Failed: ${actual}  !==  ${expected}`);
     }
 };
-const data = {
+
+  const findKey = (data,fun) => {             
+    for(let i in data) {
+       if(fun(data[i]))
+        return i;
+    }
+  }
+
+  const data = {
     "Blue Hill": { stars: 1 },
     "Akaleri":   { stars: 3 },
     "noma":      { stars: 2 },
@@ -15,13 +23,5 @@ const data = {
     "Ora":       { stars: 2 },
     "Akelarre":  { stars: 3 }
   }
-  const findKey = (data,fun) =>
-  {
-    for(let i in data) {
-       if(fun(data[i]))
-        return i;
-    }
-  }
-
 const result = findKey(data, x => x.stars === 2);
 console.log(assertEqual(result,'elBulli'));
