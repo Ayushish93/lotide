@@ -1,5 +1,5 @@
 const tail = require('../tail.js');
-const eqArrays = require('../assertArraysEqual.js');
+const eqArrays = require('../eqArrays.js');
 const assertEqual = require('../assertEqual.js');
 
 
