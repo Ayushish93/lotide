@@ -1,22 +1,5 @@
-function eqArrays(actual, expected) {
-    var res = true;
-    for (let i = 0; i < actual.length; i++) {
-        if(actual[i] !== expected[i]) {
-            res = false;
-        }
-    }
-    return res;
-}
 
-function assertArraysEqual(arg1,arg2) {
-    const check = eqArrays(arg1, arg2);
-    if(check === true) {
-        console.log(`Assertion Passed:  ${arg1} ===  ${arg2}`);
-    }
-    else {
-        console.log(`Assertion Failed:  ${arg1}  !==  ${arg2}`);
-    }
-}
+
 const middle = function(arr)
 {
     middleElement = [];
@@ -40,8 +23,5 @@ const middle = function(arr)
     }
     
 }
-// console.log(middle([1,2]));
-// console.log(middle([1,2,3,4]));
-// console.log(middle([1,2,3]));
-// const original = middle([1,2,3,4]);
-// console.log(assertArraysEqual(original,[2,3]));
+module.exports = middle;
+
