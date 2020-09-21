@@ -8,15 +8,8 @@ function eqArrays(actual, expected) {
     return res;
 }
 
-function assertArraysEqual(arg1,arg2) {
-    const check = eqArrays(arg1,arg2);
-    if(check === true) {
-        console.log(`✅Assertion Passed:  ${arg1} ===  ${arg2}`);
-    }
-    else {
-        console.log(`❌Assertion Failed:  ${arg1}  !==  ${arg2}`);
-    }
-}
-assertArraysEqual([1,2,3],[1,2,2]);
+
+module.exports = eqArrays;
+
 
 
