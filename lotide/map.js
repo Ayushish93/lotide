@@ -30,7 +30,11 @@ function assertArraysEqual(arg1,arg2) {
         console.log(`❌Assertion Failed:  ${arg1}  !==  ${arg2}`);
     }
 }
-const results1 = map(words, word => word[0]);
-//console.log(results1);
-console.log(assertArraysEqual(map(words, word => word[0]),[ 'g', 'c', 't', 'mm', 't' ]));
-console.log(results1,[ 'g', 'c', 't', 'mm', 't' ]);
+// const results1 = map(words, word => word[0]);
+// //console.log(results1);
+// console.log(assertArraysEqual(map(words, word => word[0]),[ 'g', 'c', 't', 'mm', 't' ]));
+// console.log(results1,[ 'g', 'c', 't', 'mm', 't' ]);
+
+
+
+module.exports = map;

@@ -34,4 +34,8 @@ function assertArraysEqual(arg1,arg2) {
         console.log(`Assertion Failed:  ${arg1}  !==  ${arg2}`);
     }
 }
-assertArraysEqual(letterPositions("hello").e, [1]);
+//assertArraysEqual(letterPositions("hello").e, [1]);
+
+
+
+module.exports = letterPositions;
