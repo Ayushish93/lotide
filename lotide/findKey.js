@@ -1,12 +1,5 @@
-const assertEqual = function(actual, expected) {
-    
-    if(actual === expected){
-        console.log(`✅Assertion Passed:  ${actual}   ===   ${expected}`);
-    }
-    else{
-        console.log(`❌Assertion Failed: ${actual}  !==  ${expected}`);
-    }
-};
+
+let assertEqual = require('./assertEqual');
 
   const findKey = (data,fun) => {             
     for(let i in data) {
@@ -25,3 +18,4 @@ const assertEqual = function(actual, expected) {
   }
 const result = findKey(data, x => x.stars === 2);
 console.log(assertEqual(result,'elBulli'));
+

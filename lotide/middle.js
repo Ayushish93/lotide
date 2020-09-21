@@ -43,5 +43,5 @@ const middle = function(arr)
 // console.log(middle([1,2]));
 // console.log(middle([1,2,3,4]));
 // console.log(middle([1,2,3]));
-const original = middle([1,2,3,4]);
-console.log(assertArraysEqual(original,[2,3]));
+// const original = middle([1,2,3,4]);
+// console.log(assertArraysEqual(original,[2,3]));
